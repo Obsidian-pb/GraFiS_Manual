@@ -1,0 +1,53 @@
+project:
+  type: book
+
+number-depth: 1
+
+  
+
+book:
+  title: "Использование формул АИГС ГраФиС-Тактик"
+  author: "Малютин Олег Сергеевич, Семенов "
+  date: "05/16/2022"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: shapes.qmd
+      chapters: 
+        - shapes/new-shape.qmd
+        - shapes/add-props.qmd
+        - shapes/common-props.qmd
+        - shapes/add-calculations.qmd
+    - part: html.qmd
+      chapters:
+        - html/main-code.qmd
+        - html/markers.qmd
+        - html/changes-revision.qmd
+    - part: reports.qmd
+      chapters:
+        - reports/linking.qmd
+        - reports/rules.qmd
+        - reports/view.qmd
+        - reports/save.qmd
+        - reports/use-saved.qmd
+    - part: advaced.qmd
+      chapters:
+        - advanced/renumeration.qmd
+        - advanced/analize-props.qmd
+    - summary.qmd
+    - references.qmd
+  appendices:
+    - appends/html-tags.qmd
+    - appends/common-formulas.qmd
+  page-navigation: true
+  
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+lang: ru
+
