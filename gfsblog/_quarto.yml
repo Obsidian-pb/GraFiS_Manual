@@ -10,7 +10,7 @@ website:
         href: https://github.com/Obsidian-pb/GraFiS-Tactic
 format:
   html:
-    theme: cosmo
+    theme: sandstone
     css: styles.css
 
 lang: ru

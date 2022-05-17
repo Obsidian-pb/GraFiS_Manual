@@ -1,9 +1,27 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
+title: "Пробный пост"
+author: "Малютин О.С."
 date: "2022-05-17"
-categories: [news, code, analysis]
+categories: [код]
 image: "image.jpg"
+draft: true
 ---
 
 This is a post with executable code.
+
+
+
+$E = mc^{2}$
+
+```
+Debug.Print "Hello world!!!"
+
+for each shp in Application.ActivePage.shapes
+    Debug.Print shp.Name
+next shp
+```
+
+```{python}
+alpha = 0.1
+ratio = 0.1
+```
