@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "Руководство по расчету сил и средств (базовые расчеты)"
+  author: "Малютин Олег Сергеевич"
+  date: "2022-05-17"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+lag: ru
+

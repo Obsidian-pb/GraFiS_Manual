@@ -1,2 +1,10 @@
-# GraFiS_Manual
-Project fo online refbook manual by shapes for AIGS GraFiS-Tactic
+# Репозиторий для проектов литературы в рамках проекта АИГС ГраФиС-Тактик
+
+Основной репозиторий АИГС ГраФиС-Тактик: [GraFiS-Tactic >>](https://github.com/Obsidian-pb/GraFiS-Tactic)
+
+Официальный сайт проекта: [graphicalfiresets.ru >>](https://www.graphicalfiresets.ru/)
+
+## Репозитории:
+1. formulas - Руководство по работе с формулами АИГС ГраФиС-Тактик
+2. gfsblog - Блог по работе в рамках проекта АИГС ГраФиС-Тактик
+3. SiS_calc_handle_0 - Руководство по проведению пожарно-тактических расчетов
