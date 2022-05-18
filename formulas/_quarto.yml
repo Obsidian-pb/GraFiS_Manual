@@ -3,28 +3,31 @@ project:
 
 number-depth: 1
 
-  
+
 
 book:
   title: "Использование формул АИГС ГраФиС-Тактик"
-  author: "Малютин Олег Сергеевич, Семенов "
-  date: "05/16/2022"
+  author: "Малютин Олег Сергеевич, Семенов Геннадий Николаевич"
+  date: "2022-05-16"
   chapters:
     - index.qmd
     - intro.qmd
     - part: shapes.qmd
       chapters: 
+        - shapes.qmd
         - shapes/new-shape.qmd
         - shapes/add-props.qmd
         - shapes/common-props.qmd
         - shapes/add-calculations.qmd
     - part: html.qmd
       chapters:
+        - html.qmd
         - html/main-code.qmd
         - html/markers.qmd
         - html/changes-revision.qmd
     - part: reports.qmd
       chapters:
+        - reports.qmd
         - reports/linking.qmd
         - reports/rules.qmd
         - reports/view.qmd
@@ -32,6 +35,7 @@ book:
         - reports/use-saved.qmd
     - part: advaced.qmd
       chapters:
+        - advaced.qmd
         - advanced/renumeration.qmd
         - advanced/analize-props.qmd
     - summary.qmd
