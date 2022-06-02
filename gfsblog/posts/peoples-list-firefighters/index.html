@@ -8,7 +8,7 @@
 
 <meta name="author" content="Малютин О.С.">
 
-<title>ГраФиС-блог - Добро пожаловать в блог</title>
+<title>ГраФиС-блог - Учет только пожарных в списке личного состава</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,9 +90,9 @@ ul.task-list{list-style: none;}
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Добро пожаловать в блог</h1>
+      <h1 class="title">Учет только пожарных в списке личного состава</h1>
                           <div class="quarto-categories">
-                <div class="quarto-category">общие</div>
+                <div class="quarto-category">анализ</div>
               </div>
                   </div>
   </div>
@@ -113,7 +113,7 @@ ul.task-list{list-style: none;}
       <div>
       <div class="quarto-title-meta-heading">Дата публикации</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">14 мая 2022 г.</p>
+        <p class="date">18 мая 2022 г.</p>
       </div>
     </div>
       
@@ -130,10 +130,29 @@ ul.task-list{list-style: none;}
 
 
 
-<p>Здравствуйте уважаемые пользователи АИГС ГраФиС-Тактик.</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Технологии все время совершенствуются и мы стараемся оценить применимость тех или иных новинок для того чтобы максимально просто и наглядно рассказывать вам о последних новостях и нововведениях в системе <a href="https://www.graphicalfiresets.ru">ГраФиС-Тактик</a>.</p>
-<p>В этом блоге я, а возможно и мои коллеги, будем выкладывать новости, краткие сведения о ходе работы над проектом ГраФиС-Тактик, и прочую полезную информацию, которую по тем или иным причинам нет возможности публиковать в ином формате. Добро пожаловать и оставайтессь с нами!</p>
+<p>Одним из недостатков отмечаемых при анализе моделей БДТП при помощи инстурментов АИГС ГраФиС-Тактик является учет всего боевого расчета - и пожарных и водитилей. Это часто путает людей работающих с системой.</p>
+<p><code>начиная с ГраФиС-Тактик 13.0.02</code></p>
+<p>Хорошо заметен этот недостаток в форме списка “Личный состав” (рис. 1).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="was.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">1. Список личного состава ранее</figcaption><p></p>
+</figure>
+</div>
+<p>Первопричиной недостатка является то, что в фигурах пожарной техники ГраФиС в поле “Боевой расчет” указываются и водитель и пожарные (рис 2). К сожалению такая логика слишком плотно интегрирована в логику работы всей АИГС ГраФиС-Тактик и избавиться от нее не вступая в противоречие невозможно.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="personel.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">2. Поле “Боевой расчет”</figcaption><p></p>
+</figure>
+</div>
+<p>С целью устранения недостатка списка “Личный состав” была изменена логика расчета. Теперь при определении количества пожарных из общего количества боевого расчета вычитается единица (представляющая водителя). Таким образом, теперь, для той же модели что и в рисунке 1 окно “Личный состав” будет выглядеть так как это показано на рисунке 3.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="became.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">3. Список личного состава после изменений</figcaption><p></p>
+</figure>
+</div>
 
 
 
