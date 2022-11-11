@@ -17,14 +17,12 @@ book:
         - shapes.qmd
         - shapes/new-shape.qmd
         - shapes/add-props.qmd
-        - shapes/common-props.qmd
         - shapes/add-calculations.qmd
     - part: html.qmd
       chapters:
         - html.qmd
         - html/main-code.qmd
         - html/markers.qmd
-        - html/changes-revision.qmd
     - part: reports.qmd
       chapters:
         - reports.qmd
