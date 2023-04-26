@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Использование формул АИГС ГраФиС-Тактик - 2&nbsp; Добавление свойств фигуры формулы</title>
+<title>Использование формул АИГС ГраФиС-Тактик - 2&nbsp; Определение свойств фигуры формулы</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../shapes.html">Работа с фигурами формул</a></li><li class="breadcrumb-item"><a href="../shapes/add-props.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Добавление свойств фигуры формулы</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../shapes.html">Работа с фигурами формул</a></li><li class="breadcrumb-item"><a href="../shapes/add-props.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Определение свойств фигуры формулы</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Поиск" onclick="window.quartoOpenSearch();">
@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../shapes/add-props.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Добавление свойств фигуры формулы</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Определение свойств фигуры формулы</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -268,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Добавление свойств фигуры формулы</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Определение свойств фигуры формулы</span></h1>
 </div>
 
 
@@ -283,61 +283,39 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>После создания фигуры формулы и добавления ее свойств, необходимо провести работу по определению этих свойств и корректировке данных.</p>
+<p>Для осуществления данных действий предлагается следующий алгоритм:</p>
 <blockquote class="blockquote">
 <ol type="1">
-<li>Открываем таблицу свойств фигуры (Окно &gt; Показать таблицу свойств фигуры).</li>
+<li>Открываем таблицу свойств фигуры (Окно &gt; Показать таблицу свойств фигуры)(рис. 1).</li>
 </ol>
 </blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Picture/6.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Рисунок 1.</figcaption>
+<figcaption class="figure-caption">Рисунок 1 - Алгоритм отркытия таблицы свойств фигуры формулы</figcaption>
 </figure>
 </div>
 <blockquote class="blockquote">
 <ol start="2" type="1">
-<li>В открытой таблице внаходим следующие столбцы:</li>
+<li>В открытой таблице находим следующие столбцы:</li>
 </ol>
 </blockquote>
 <blockquote class="blockquote">
 <blockquote class="blockquote">
-<p>Shape data - Имя данных</p>
+<p>“Shape data - Имя данных</p>
 </blockquote>
 </blockquote>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
 <p>Label - Подпись данных</p>
-</blockquote>
-</blockquote>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
 <p>Prompt - Сообщение необходимое при пояснении данных</p>
-</blockquote>
-</blockquote>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
 <p>Type - Тип данных (значение зависит от типа данных, который мы выбрали в таблице данных фигуры)</p>
-</blockquote>
-</blockquote>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
 <p>Format - Формат данных (Область значений)</p>
-</blockquote>
-</blockquote>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
 <p>Value - значение данных</p>
-</blockquote>
-</blockquote>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<p>Invisible - Отвечает за отображение данных в таблице данных фигуры</p>
-</blockquote>
-</blockquote>
+<p>Invisible - Отвечает за отображение данных в таблице данных фигуры”</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Picture/7.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Рисунок 2.</figcaption>
+<figcaption class="figure-caption">Рисунок 2 - Свойства фигуры формулы</figcaption>
 </figure>
 </div>
 <blockquote class="blockquote">

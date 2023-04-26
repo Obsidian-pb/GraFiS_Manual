@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Использование формул АИГС ГраФиС-Тактик - 1&nbsp; Создание новой фигуры формул</title>
+<title>Использование формул АИГС ГраФиС-Тактик - 1&nbsp; Создание новой фигуры формул и добавление свойств</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../shapes.html">Работа с фигурами формул</a></li><li class="breadcrumb-item"><a href="../shapes/new-shape.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Создание новой фигуры формул</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../shapes.html">Работа с фигурами формул</a></li><li class="breadcrumb-item"><a href="../shapes/new-shape.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Создание новой фигуры формул и добавление свойств</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Поиск" onclick="window.quartoOpenSearch();">
@@ -122,13 +122,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../shapes/new-shape.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Создание новой фигуры формул</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Создание новой фигуры формул и добавление свойств</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../shapes/add-props.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Добавление свойств фигуры формулы</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Определение свойств фигуры формулы</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -268,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Создание новой фигуры формул</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Создание новой фигуры формул и добавление свойств</span></h1>
 </div>
 
 
@@ -283,42 +283,44 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Данная работа нацелена на обучение пользователей работе с фигурами формул АИГС ГраФиС.</p>
+<p>Ниже мы рассмотрим алгоритм по созданию новой фигуры формулы:</p>
 <blockquote class="blockquote">
 <ol type="1">
-<li>Создаем фигуру “Прямоугольник” произвольного размера (Главная &gt; Средства рисования &gt; Прямоугольник).</li>
+<li>Создаем фигуру “Прямоугольник” произвольного размера (Главная &gt; Средства рисования &gt; Прямоугольник)(рис. 1).</li>
 </ol>
 </blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Picture/1.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Рисунок 1.</figcaption>
+<figcaption class="figure-caption">Рисунок 1 - Средства рисования</figcaption>
 </figure>
 </div>
 <blockquote class="blockquote">
 <ol start="2" type="1">
-<li>Открываем таблицу данных фигуры (Нажатие правой кнопкой мыши по фигуре &gt; Данные &gt; Данные фигуры).</li>
+<li>Открываем таблицу данных фигуры (Нажатие правой кнопкой мыши по фигуре &gt; Данные &gt; Данные фигуры)(рис. 2).</li>
 </ol>
 </blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Picture/2.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Рисунок 2.</figcaption>
+<figcaption class="figure-caption">Рисунок 2 - Алгоритм открытия данных фигуры</figcaption>
 </figure>
 </div>
 <blockquote class="blockquote">
 <ol start="3" type="1">
-<li>Определяем данные фигуры (Нажатие правой кнопкой мыши по кнопке “Определить” ).</li>
+<li>Определяем данные фигуры (Нажатие правой кнопкой мыши по кнопке “Определить”)(рис. 3).</li>
 </ol>
 </blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Picture/3.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Рисунок 3.</figcaption>
+<figcaption class="figure-caption">Рисунок 3 - Данные фигуры</figcaption>
 </figure>
 </div>
 <blockquote class="blockquote">
 <blockquote class="blockquote">
-<p>3.1. В появившейся вкладке появляется возможность добавить одну строку данных.</p>
+<p>3.1. В появившейся вкладке появляется возможность добавить одну строку данных(Рис. 4).</p>
 </blockquote>
 </blockquote>
 <blockquote class="blockquote">
@@ -334,7 +336,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Picture/4.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Рисунок 4.</figcaption>
+<figcaption class="figure-caption">Рисунок 4 - Определение данных фигуры</figcaption>
 </figure>
 </div>
 <blockquote class="blockquote">
@@ -587,7 +589,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="../shapes/add-props.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Добавление свойств фигуры формулы</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Определение свойств фигуры формулы</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
