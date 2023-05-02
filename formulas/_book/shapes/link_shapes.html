@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Использование формул АИГС ГраФиС-Тактик - 9&nbsp; Сохранение созданных фигур формул и полных наборов расчетов в трафаретах</title>
+<title>Использование формул АИГС ГраФиС-Тактик - 4&nbsp; Связи фигур формул (передача информации между фигурами)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../reports/use-saved.html" rel="next">
-<link href="../reports/view.html" rel="prev">
+<link href="../html.html" rel="next">
+<link href="../shapes/add-calculations.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Сохранение созданных фигур формул и полных наборов расчетов в трафаретах</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Связи фигур формул (передача информации между фигурами)</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../shapes/link_shapes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Связи фигур формул (передача информации между фигурами)</span></a>
+  <a href="../shapes/link_shapes.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Связи фигур формул (передача информации между фигурами)</span></a>
   </div>
 </li>
       </ul>
@@ -173,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reports/save.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Сохранение созданных фигур формул и полных наборов расчетов в трафаретах</span></a>
+  <a href="../reports/save.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Сохранение созданных фигур формул и полных наборов расчетов в трафаретах</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -245,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Сохранение созданных фигур формул и полных наборов расчетов в трафаретах</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Связи фигур формул (передача информации между фигурами)</span></h1>
 </div>
 
 
@@ -260,33 +260,55 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>После создания схемы из нескольких формул, для последующей работы с ней, понадобится сохранить её.</p>
+<p>Разработка логики расчета имеет ввиду взаимосвязь данных, а значит имена данных должны быть идентичными во всех формулах.</p>
+<p>Приведем конкретный пример расчета пути пройденного огнем:</p>
 <blockquote class="blockquote">
-<p>Для этого выделяем все формулы (При зажатой клавише Ctrl нажимаем правой кнопкой мыши на все фигуры и соеденительные линии в схеме)</p>
+<ol type="1">
+<li>Переносим необходимые фигуры формул из блока основных расчетов на рабочее окно (рис. 1)</li>
+</ol>
 </blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="Picture/1.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Рисунок 1.</figcaption><p></p>
+<p><img src="Picture/10.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Рисунок 1 - Перенос фигур формул</figcaption><p></p>
 </figure>
 </div>
 <blockquote class="blockquote">
-<p>Теперь нам необходимо объеденить все фигуры в одну систему, делается это путем группирования (После выделения всех фигур нажимаем правой кнопкой мыжи по одной из фигур в появившемся окне выбираем вкладку “Фигура”, затем “Группировать”)</p>
+<ol start="2" type="1">
+<li>Выбираем на панели инструментов инструмент “соединительная линия” и соединяем две фигуры формул между собой (рис. 2)</li>
+</ol>
+</blockquote>
+<p>Примечание: После использования соеденительной линии нужно не забывать выбрать инструмент “Указатель”, который находится рядом с инструментом</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Picture/11.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Рисунок 2 - Соединение двух фигур формул</figcaption><p></p>
+</figure>
+</div>
+<blockquote class="blockquote">
+<ol start="3" type="1">
+<li>Связываем два параметра. В левом столбце находятся параметры из которых мы будем брать данные, а в правом столбце параметры, которым мы хотим передать эти данные (рис. 3).</li>
+</ol>
+</blockquote>
+<p>Примечание: Для удобства рекомендуется называть связываемые параметры идентичными наименованиями, но в данном примере мы руководствуемся логикой расчета и приравниваем расчетное время введения сил и средств, к времени свободного развития пожара.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Picture/12.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Рисунок 3 - Выбор соединяемых ячеек и перенос данных</figcaption><p></p>
+</figure>
+</div>
+<blockquote class="blockquote">
+<ol start="4" type="1">
+<li>Необходимо обновить обе формулы для произведения расчета и переноса данных (рис. 4).</li>
+</ol>
 </blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="Picture/2.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Рисунок 2.</figcaption><p></p>
+<p><img src="Picture/13.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Рисунок 4 - обновление формулы</figcaption><p></p>
 </figure>
 </div>
-<p>Появившуюся объединенную фигуру для её сохранения и последующего использования переносим в произвольный набор элементов</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Picture/3.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Рисунок 3.</figcaption><p></p>
-</figure>
-</div>
-<p>Теперь мы сохранили фигуру и можем использовать её в дальнейшем в своих расчетах путем перемещения из набора элементов на рабочую панель. Рекомендуется переименовать фигуру для упрощения её дальнейшего поиска</p>
+<p>Таким образом связывая одну формулу с другой, имеется возможность построения полного расчета сил и средств.</p>
 
 
 
@@ -426,13 +448,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../reports/view.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Просмотр итогового полного расчета</span></span>
+      <a href="../shapes/add-calculations.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Разработка логики расчета</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../reports/use-saved.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Использование сохраненных ранее фигур формул</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../html.html" class="pagination-link">
+        <span class="nav-page-text">Редактирование исходного кода разметки формул</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -17,6 +17,7 @@ book:
         - shapes/new-shape.qmd
         - shapes/add-props.qmd
         - shapes/add-calculations.qmd
+        - shapes/link_shapes.qmd
     - part: html.qmd
       chapters:
         - html/main-code.qmd
